@@ -9,13 +9,14 @@ jobs:
         - checkout
         - run:
             name: The First Step for demo
-            command: |
+            command: |lsb_release -a
               echo 'Hello World!'
               echo 'This is the delivery pipeline'
         - checkout
         - run:
             name: Installing g++
             command: sudo apt-get update && sudo apt-get install build-essential 
+            command: lsb_release -a
         - checkout
         - run:
             name: run permissions for project
