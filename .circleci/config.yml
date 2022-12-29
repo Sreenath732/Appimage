@@ -9,7 +9,7 @@ jobs:
         - checkout
         - run:
             name: The First Step for demo
-            command: |lsb_release -a
+            command: |
               echo 'Hello World!'
               echo 'This is the delivery pipeline'
         - checkout
